@@ -19,7 +19,7 @@ This program was built and tested using macOS 11.2 Big Sur and should work on al
 * Open the `~/video-backup-utility/preferences.py` file (using an IDE such as <a href="https://www.python.org/downloads/" target="_blank">IDLE</a> or <a href="https://code.visualstudio.com/download" target="_blank">VSCode</a>) and reference the following preferences:
   * The ExifTool utility path (default for macOS is `"/usr/local/bin/exiftool"`). It should be given to you during the install process, or you can find it online.
   * The file extensions (in lowercase) for original and target files
-  * The text string which is appended to a target file's name (example: ORIGINAL="IMG_009.MP4" >> COMPRESSED="IMG_009 (HEVC).MP4"). There must be no text placed between the marker (" (HEVC)" here) and the extension (".MP4" here). The filename before the marker ("IMG_009" here) must be the same as that of the original file. The marker is case-sensitive. (" (hevc)" wouldn't work here).
+  * The text string which is appended to a target file's name (example: `ORIGINAL="IMG_009.MP4"` >> `COMPRESSED="IMG_009 (HEVC).MP4"`). There must be no text placed between the marker (`" (HEVC)"` here) and the extension (`".MP4"` here). The filename before the marker (`"IMG_009"` here) must be the same as that of the original file. The marker is case-sensitive. (`" (hevc)"` wouldn't work here).
 * Open the `~/video-backup-utility/main.py` file and reference the directory paths:
   * The path of the folder containing the original files, the metadata of which you wish to copy over to their compressed/backupped counterparts (example: `"ahernot/desktop/original/"`)
   * The path of the folder containing the compressed/backupped files (example: `"ahernot/desktop/compressed/"`)
