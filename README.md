@@ -10,7 +10,7 @@ This program was built and tested using macOS 11.2 Big Sur and should work on al
 
 ## Requirements
 * ExifTool installed in `preferences.py > EXIFTOOL_PATH` location (more information <a href="https://exiftool.org" target="_blank">here</a>)
-* Python (tested with Python 3.9.0, should work with Python 3.6.0 and newer)
+* <a href="https://www.python.org/downloads/" target="_blank">Python</a> (tested with Python 3.9.0, should work with Python 3.6.0 and newer)
 
 <br>
 
