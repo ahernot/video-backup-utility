@@ -6,6 +6,7 @@
 This program manages editing metadata for backupped files.
 
 <br>
+
 ## Requirements
 * Exiftool installed in `preferences.py > EXIFTOOL_PATH` location (more information <a href="https://exiftool.org" target="_blank">here</a>)
 * Python (tested with Python 3.9.0, should work with Python 3.6.0 and newer)
