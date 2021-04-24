@@ -1,0 +1,1 @@
+ERROR_ORIGINAL_NOT_FOUND = "Original file not found. Make sure that you have correctly referenced the original file's extension in preferences.py and that the compressed file bears the correct marker."
