@@ -15,7 +15,7 @@ This program was built and tested using macOS 11.2 Big Sur and should work on al
 <br>
 
 ## Usage
-* Clone the git repository (using `git clone https://github.com/ahernot/video-backup-utility/` or a GUI such as <a href="https://desktop.github.com" target="_blank">GitHub Desktop</a>
+* Clone the git repository (using `git clone https://github.com/ahernot/video-backup-utility/` in the terminal/console, or a GUI such as <a href="https://desktop.github.com" target="_blank">GitHub Desktop</a>)
 * Open the `~/video-backup-utility/preferences.py` file (using an IDE such as <a href="https://www.python.org/downloads/" target="_blank">IDLE</a> or <a href="https://code.visualstudio.com/download" target="_blank">VSCode</a>) and reference the following preferences:
   * The ExifTool utility path (default for macOS is `"/usr/local/bin/exiftool"`). It should be given to you during the install process, or you can find it online.
   * The file extensions (in lowercase) for original and target files
@@ -23,5 +23,5 @@ This program was built and tested using macOS 11.2 Big Sur and should work on al
 * Open the `~/video-backup-utility/main.py` file and reference the directory paths:
   * The path of the folder containing the original files, the metadata of which you wish to copy over to their compressed/backupped counterparts (example: `"ahernot/desktop/original/"`)
   * The path of the folder containing the compressed/backupped files (example: `"ahernot/desktop/compressed/"`)
-* Open a terminal window, and run `cd PATH_TO_CLONED_FOLDER` where `PATH_TO_CLONED_FOLDER` is something like `~/video-backup-utility/`
+* Open a terminal/console window, and run `cd PATH_TO_CLONED_FOLDER` where `PATH_TO_CLONED_FOLDER` is something like `~/video-backup-utility/`
 * Run `python main.py`
