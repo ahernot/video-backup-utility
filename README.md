@@ -13,6 +13,7 @@ This program was built and tested using macOS 11.2 Big Sur and should work on al
 * Python (tested with Python 3.9.0, should work with Python 3.6.0 and newer)
 
 <br>
+
 ## Usage
 * Clone the git repository (using `git clone https://github.com/ahernot/video-backup-utility/` or a GUI such as <a href="https://desktop.github.com" target="_blank">GitHub Desktop</a>
 * Open the `~/video-backup-utility/preferences.py` file and reference the preferences:
