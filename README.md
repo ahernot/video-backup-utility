@@ -4,3 +4,7 @@
 <br><br>
 
 This program manages editing metadata for videos converted to HEVC for backup.
+
+<br><br>
+## Requirements
+* Exiftool installed in `EXIFTOOL_PATH` location
