@@ -4,9 +4,23 @@
 <br>
 
 This program manages editing metadata for backupped files.
+This program was built and tested using macOS 11.2 Big Sur and should work on all macOS and OSX versions. Compatibility with other operating systems is likely but not guaranteed. For more information, search for utility paths and subprocess syntax on your OS.
 
 <br>
 
 ## Requirements
-* Exiftool installed in `preferences.py > EXIFTOOL_PATH` location (more information <a href="https://exiftool.org" target="_blank">here</a>)
+* ExifTool installed in `preferences.py > EXIFTOOL_PATH` location (more information <a href="https://exiftool.org" target="_blank">here</a>)
 * Python (tested with Python 3.9.0, should work with Python 3.6.0 and newer)
+
+<br>
+## Usage
+* Clone the git repository (using `git clone https://github.com/ahernot/video-backup-utility/` or a GUI such as <a href="https://desktop.github.com" target="_blank">GitHub Desktop</a>
+* Open the `~/video-backup-utility/preferences.py` file and reference the preferences:
+  * The ExifTool utility path (default for macOS is "/usr/local/bin/exiftool"). It should be given to you during the install process, or you can find it online.
+  * The file extensions (in lowercase) for original and target files
+  * The text string which is appended to a target file's name (example: ORIGINAL="IMG_009.MP4" >> COMPRESSED="IMG_009 (HEVC).MP4"). There must be no text placed between the marker (" (HEVC)" here) and the extension (".MP4" here). The filename before the marker ("IMG_009" here) must be the same as that of the original file. The marker is case-sensitive. (" (hevc)" wouldn't work here).
+* Open the `~/video-backup-utility/main.py` file and reference the directory paths:
+  * The path of the folder containing the original files, the metadata of which you wish to copy over to their compressed/backupped counterparts (example: `"ahernot/desktop/original/"`)
+  * The path of the folder containing the compressed/backupped files (example: `"ahernot/desktop/compressed/"`)
+* Open a terminal window, and run `cd PATH_TO_CLONED_FOLDER` where `PATH_TO_CLONED_FOLDER` is something like `~/video-backup-utility/`
+* Run `python main.py`
