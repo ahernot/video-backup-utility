@@ -1,17 +1,11 @@
 import os
 import subprocess
-
-"""
-import os.path
-from os import path
-import json
-"""
-
 import time
 import datetime
 
 from preferences import *
 from errors import *
+from exiftool import ExifTool
 
 
 def rebuild_dirpath(dirpath: str):
@@ -38,7 +32,7 @@ def edit_metadata(original_files_path: str, compressed_files_path: str):
             filename, extension = os.path.splitext( filename_full )
 
             # Skip iteration if wrong extension
-            if extension.lower() not in ORIGINAL_FILE_EXTENSIONS:
+            if extension.lower() [1:] not in ORIGINAL_FILE_EXTENSIONS:
                 continue
             
             # Write to dictionary (overwrite any previous filename)
@@ -55,11 +49,11 @@ def edit_metadata(original_files_path: str, compressed_files_path: str):
             filename, extension = os.path.splitext( filename_full )
 
             # Skip iteration if wrong extension
-            if extension.lower() not in COMPRESSED_FILE_EXTENSIONS):
+            if extension.lower() [1:] not in COMPRESSED_FILE_EXTENSIONS:
                 continue
 
             # Create original filename
-            filename_original = filename.split[ COMPRESSED_MARKER ] [0]
+            filename_original = filename.split( COMPRESSED_MARKER ) [0]
 
             # Retrieve original file extension
             try:
