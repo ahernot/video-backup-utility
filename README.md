@@ -7,4 +7,4 @@ This program manages editing metadata for videos converted to HEVC for backup.
 
 <br><br>
 ## Requirements
-* Exiftool installed in `EXIFTOOL_PATH` location
+* Exiftool installed in `preferences.py > EXIFTOOL_PATH` location
