@@ -23,5 +23,5 @@ This program was built and tested using macOS 11.2 Big Sur and should work on al
 * Open the `~/video-backup-utility/main.py` file and reference the directory paths:
   * The path of the folder containing the original files, the metadata of which you wish to copy over to their compressed/backupped counterparts (example: `"ahernot/desktop/original/"`)
   * The path of the folder containing the compressed/backupped files (example: `"ahernot/desktop/compressed/"`)
-* Open a terminal/console window, and run `cd PATH_TO_CLONED_FOLDER` where `PATH_TO_CLONED_FOLDER` is something like `~/video-backup-utility/`
-* Run `python main.py`
+* Open a terminal/console window, and run the command `cd PATH_TO_CLONED_FOLDER`, where `PATH_TO_CLONED_FOLDER` is something like `~/video-backup-utility/`
+* Next, run the command `python main.py` in the terminal window. If you have multiple Python versions installed on your computer, you might want to select one using a command like `python3.9 main.py`.
