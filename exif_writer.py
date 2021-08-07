@@ -58,7 +58,7 @@ def edit_metadata(original_files_path: str, compressed_files_path: str):
             # Retrieve original file extension
             try:
                 filepath_original = original_files [filename_original]
-            except KeyNotFoundError:
+            except FileNotFoundError:
                 print(f'{filename_full} - {ERROR_ORIGINAL_NOT_FOUND}')
                 continue
 
